@@ -10,11 +10,11 @@ html
 body
 {
     font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     letter-spacing: .1em;
     color: #4c4c4c;
-    background-color: #fff9ff;
+    background-color: #FFFFFF;　/* 背景 */
 }
 
 a
@@ -99,32 +99,24 @@ section h2,
     background-color: #4c4c4c;
 }
 
-header .profile
-{
-    clear: both;
-    width: 60%;
-    margin: 0 auto;
-    padding: 60px 0;
+img {
+	max-width: 100%;
+	height: auto;
 }
+
 header .site-title
 {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     line-height: normal;
 }
 header .site-title span
 {
-    font-size: 4.2rem;
+    font-size: 6.2rem;
     display: block;
 
-    color: #ff7f7f;
+    color: #FF0461;    /* 名前 */
 }
-header .profile-icon
-{
-    margin: 30px auto;
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
-}
+
 header p
 {
     font-size: 1.6rem;
@@ -141,58 +133,70 @@ section h2
 {
     font-size: 3.2rem;
 }
+ /* スキル */
 #skills
 {
-    background-color: #ffff99;
+    background-color: #FFFFFF;
 }
-#skills .container
-{
-    display: -webkit-flex;
-    display:         flex;
-    justify-content: space-between;
-}
+
 #skills h2
 {
     margin-bottom: 60px;
-    color: #4c4c4c;;
+    font-size: 4.2rem;
+    color: #4c4c4c;
 }
-#skills .skill-box
-{
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-flex: 1;
-            flex: 1;
+/* スキル詳細 */
+.post_title {
+    margin:  0;                
+    font-size:  18px;
+}
+.post_cont {
+    padding:  10px;             /* 余白指定 */
+    background-color:  #FFFFFF;    /* 背景色指定 */
+}
+.post_text {
     margin: 0px 10px;
-    padding: 20px;
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-    background-color: #ffffff;
-}
-#skills i
-{
-    font-size: 4.5rem;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 5px;
-    padding-top: 15px;
-    text-align: center;
-    color: #fff;
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
-    background-color: #ff7f7f;
+    padding: 10px;            /* ブラウザデフォルトのmarginを削除 */
+} 
+.post_cont:not(:last-child) {   /* 最後の要素には適用しない */
+    margin-bottom:  20px;       /* 要素ごとの離れ具合 */
 }
 #skills h3
 {
     font-size: 2.4rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #ff7f7f;
+    color: #FF0461;
+    text-transform: capitalize;
+}
+
+#works_1
+{
+    background-color: #F3FFD8;
+}
+
+#works_1 h2
+{
+    margin-bottom: 30px;
+    font-size: 4.2rem;
+    color: #4c4c4c;
+}
+#works_1 h3
+{
+    margin-bottom: 30px;
+    text-align: center
+}
+
+ol {
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px
+  /*背景色などのCSSは省略*/
+}
+
+#works
+{
+    background-color: #FFFFFF;
 }
 #works
 {
@@ -200,7 +204,8 @@ section h2
 }
 #works h2
 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    color: #FF0461
 }
 #works .works-box
 {
@@ -252,7 +257,7 @@ section h2
     font-size: 1rem;
     font-weight: bold;
     display: block;
-    width: 180px;
+    width: 100px;
     margin: auto;
     padding: 5px 0;
     text-align: center;
@@ -333,6 +338,6 @@ footer
     text-decoration: underline;
     padding: 10px 0;
     text-align: center;
-    color: #4c4c4c;;
-    background-color: #ffff99;
+    color: #000000;
+    background-color: #FFFFFF;
 }
